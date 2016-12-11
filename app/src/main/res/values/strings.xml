@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">向上兼容</string>
+    <string name="text_FCWarning">由于SDK版本问题这些不兼容的应用随时可能FC，请谅解。</string>
+    <string name="text_isOK">恭喜！您现在可以安装手机不兼容的应用了！</string>
+    <string name="text_OpenSource">我Fork了xInstaller的代码，您也可以在Github上找到这个项目。</string>
+    <string name="btn_OpenXposedInstaller">打开Xposed安装器!</string>
+    <string name="err_notrun">请检查您是否在Xposed安装器中完成激活并重启（软重启）了？</string>
+    <string name="btn_Hide">切换图标隐藏</string>
+    <string name="text_switch_start">启用</string>
+    <string name="btn_InCheckUpdate">马上完成..</string>
+    <string name="btn_Update_Err">检查失败</string>
+    <string name="btn_CheckUpdate">检查更新</string>
+
+    <string name="btn_HaveUpdate">更新可用</string>
+
+    <string name="toast_ShowIcon">图标显示</string>
+    <string name="toast_HideIcon">图标隐藏</string>
+
+    <string name="text_update">最新版：%1$s\n更新日志：%2$s</string>
+    <string name="action_developer">开发者：liangyuteng0927</string>
+    <string name="action_code">源代码</string>
+</resources>

@@ -1,0 +1,6 @@
+-dontwarn com.google.**
+-keep class com.google.** { *;}
+-dontwarn android.support.**
+-keepattributes *Annotation*
+-keep class kh.android.xposed.comlatibleup.ControlCore
+-keep class org.jsoup.**

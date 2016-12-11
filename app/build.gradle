@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId 'kh.android.xposed.comlatibleup'
+        minSdkVersion 9
+        targetSdkVersion 25
+        versionCode 17
+        versionName '5.1'
+    }
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    provided fileTree(include: ['*.jar'], dir: 'deps')
+    compile 'com.github.liangyuteng0927:UpdateCheckerLib:1.1'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+}
